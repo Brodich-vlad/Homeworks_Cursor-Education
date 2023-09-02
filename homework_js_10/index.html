@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Домашня робота 10 Пoдiї. Влад Бродич</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="main_page">
+        <header class="header">
+            <div class="header_nav">
+                <a class="header_logo" href="/">VB</a>
+                <h1 class="header_title">Домашня робота 10 Пoдiї Влад Бродич</h1>
+            </div>
+      
+        </header>
+        <main class="main">
+            <section class="homework">
+                <h2 class="homework_title">Пoдiї</h2>
+
+                <div class="example">
+                    <h3 class="example_title">Завдання:</h3>
+                    <p class="requirement">Необхідно написати програму, яка буде зчитувати з клавіатури натискання клавіш та відтворювати унікальний звук для кожної клавіши (клавіши можуть бути будь-які, звуки можуть бути будь-які, тільки вкажіть у верстці – які кнопки натискати)</p>
+                </div>
+                <ul class="key_list" id="decision">
+
+                    <li class="key_list_item hiden">
+                        <button data-key='KeyC' class="key" type="button">
+                            <kbd  data-key='KeyC'>C</kbd>
+                            <span  data-key='KeyC'>Dо</span>
+                        </button>
+                      
+                    </li>
+                    <li class="key_list_item">
+                        <button data-key='KeyD' class="key" type="button"> 
+                            <kbd data-key='KeyD'>D</kbd>
+                            <span data-key='KeyD'>Rе</span>
+                        </button>
+                    </li>
+                    <li class="key_list_item">
+                        <button data-key='KeyE' class="key" type="button"> 
+                            <kbd data-key='KeyE'>E</kbd>
+                            <span data-key='KeyE'>Mi</span>
+                        </button>    
+                    </li>
+                    <li class="key_list_item">
+                        <button data-key='KeyF' class="key" type="button">
+                            <kbd data-key='KeyF'>F</kbd>
+                            <span data-key='KeyF'>Fа</span>
+                        </button>
+                    </li>
+                    <li class="key_list_item">
+                        <button data-key='KeyG' class="key" type="button">
+                            <kbd data-key='KeyG'>G</kbd>
+                            <span data-key='KeyG'>Sol</span>
+                        </button>
+                    </li>
+                    <li class="key_list_item">
+                        <button data-key='KeyA' class="key" type="button">
+                            <kbd data-key='KeyA'>A</kbd>
+                            <span data-key='KeyA'>La</span>
+                        </button>
+                    </li>
+
+                    <li class="key_list_item">
+                        <button data-key='KeyB' class="key" type="button">
+                            <kbd data-key='KeyB'>B</kbd>
+                            <span data-key='KeyB'>Si</span>
+                        </button>
+                    </li>
+                </ul>
+                <audio data-key='KeyC'>
+                    <source src="./audio/do.mp3" type="audio/mpeg"/>
+                    <source src="./audio/do.wav" type="audio/wav"/>
+                </audio>
+
+                <audio data-key='KeyD'>
+                    <source src="./audio/re.mp3" type="audio/mpeg"/>
+                    <source src="./audio/re.wav" type="audio/wav"/>
+                </audio>
+
+                <audio data-key='KeyE'>
+                    <source src="./audio/mi.mp3" type="audio/mpeg"/>
+                <source src="./audio/mi.wav" type="audio/wav"/>                 
+                </audio>
+
+                <audio data-key='KeyF'>
+                    <source src="./audio/fa.mp3" type="audio/mpeg"/>
+                    <source src="./audio/fa.wav" type="audio/wav"/>  
+                </audio>
+
+                <audio data-key='KeyG'>
+                    <source src="./audio/sol.mp3" type="audio/mpeg"/>
+                    <source src="./audio/sol.wav" type="audio/wav"/> 
+                </audio>
+
+                <audio data-key='KeyA'>
+                    <source src="./audio/lya.mp3" type="audio/mpeg"/>
+                    <source src="./audio/lya.wav" type="audio/wav"/> 
+                </audio>
+
+                <audio data-key='KeyB'>
+                    <source src="./audio/si.mp3" type="audio/mpeg"/>
+                    <source src="./audio/si.wav" type="audio/wav"/> 
+                </audio>
+
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer_wrapper">
+                <a class="footer_mail" href="mailto:brodich_vlad@ukr.net">brodich_vlad@ukr.net</a>
+                <p class="footer_date">02 Вересня 2023р.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./code/index.js" type="module"></script>
+</body>
+</html>
