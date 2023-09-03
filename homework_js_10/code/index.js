@@ -1,29 +1,36 @@
-import { 
-    getElement,
+import {
+    myGetElement,
+    getSrc
 } from './my_functions.js';
 
 
 // Функція управління нотами.
 function showNote(e){
-    const audio = getElement(`audio[data-key=${e.code ? e.code: e}]`);
-    const key = getElement(`.key[data-key=${e.code ? e.code: e}]`);
-    if(key){
-        key.classList.add('_show')
-    }
-   if(!audio) return;
-    audio.currentTime = 0;
-    audio.play()
-    audio.addEventListener('ended',()=>{
-        key.classList.remove('_show')
-    })
-}
+    const audio = myGetElement("#audioPlayer");
+    const key = myGetElement(`.key[data-key=${e.code ? e.code: e}]`);
 
-// Подія клавіатури.
+    if(key){
+        key.classList.add('_show');
+    }else return;
+    
+    if (!audio) return;
+
+    audio.src = getSrc(`${e.code ? e.code: e}`);
+    audio.currentTime = 0;
+    audio.play();
+    
+    // Слухач події закінчення мелодії.
+    audio.addEventListener('ended',()=>{
+        key.classList.remove('_show');
+    });
+};
+
+// Слухач події клавіатури.
 window.addEventListener('keydown',showNote);
 
-// Подія клік.
-getElement('#decision')
-    .addEventListener('click',(ev)=>{
-        if(ev.target.dataset.key){showNote(ev.target.dataset.key)}
-        return
+// Слухач події клік.
+myGetElement('#decision')
+    .addEventListener('click', (ev) => {
+        if (ev.target.dataset.key) { showNote(ev.target.dataset.key) }
+        return;
     });
