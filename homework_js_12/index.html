@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="зоряні війни">
+    <meta name="description"
+        content="Проект зоряні війни  робота з сервером. Отримання та вивід інформації.">
+    <meta name="author" content="Vlad Brodich">
+
+
+
+    <title>Домашня робота js 12 Робота з сервером.</title>
+    <link rel="icon" href="./icon.png" type="image/png">
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="main_page">
+        <header class="header">
+            <div class="header_nav">
+                <a class="header_logo" href="/">VB</a>
+                <h1 class="header_title" lang="uk">Домашня робота js 12 Робота з сервером.</h1>
+            </div>
+        </header>
+        <main class="main">
+            <ul class="navigation">
+                <li class="navigation__item" data-category="films">
+                    <img data-category="films" src='./image/icon-films.png' alt='films'/>
+                    <h2 data-category="films">films</h2>
+                </li>
+                <li class="navigation__item"  data-category="people">
+                    <img src='./image/CHARACTERS.png' alt='characters'/>
+                    <h2>characters</h2>
+                </li>
+
+                <li class="navigation__item"  data-category="planets">
+                    <img src='./image/PLANETS.png' alt='planets'/>
+                    <h2>planets</h2>
+                </li>
+                <li class="navigation__item"  data-category="species">
+                    <img src='./image/SPECIES.png' alt='species'/>
+                    <h2>species</h2>
+                </li>
+                <li class="navigation__item"  data-category="starships">
+                    <img src='./image/STARSHIPS.png' alt='starships'/>
+                    <h2>starships</h2>
+                </li>
+                <li class="navigation__item"  data-category="vehicles">
+                    <img src='./image/VEHICLES.png' alt='vehicles'/>
+                    <h2>vehicles</h2>
+                </li>
+            </ul>
+            <section class="section-result">
+               <h2 class="section-result_title"></h2>
+               <ul class="result-list" id="root"></ul>
+                <div class="pagination"></div>
+                
+            </section>
+
+            <div class="modal _hiden">
+                <div class="modal-content">
+                    <div class="modal-content_img" id="modal-img"></div>
+                    <div class="modal-content_info"></div>
+                </div>
+                <span class="btn_close">&#10006;</span>
+            </div>
+            <div class="wrapper_loader _hiden">
+                <img src="./image/star-wars-jedi.gif" alt="star-wars">
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer_wrapper">
+                <a class="footer_mail" href="mailto:brodich_vlad@ukr.net">brodich_vlad@ukr.net</a>
+                <p class="footer_date" lang="uk">14 Вересня 2023р.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./code/index.js" type="module"></script>
+</body>
+</html>
