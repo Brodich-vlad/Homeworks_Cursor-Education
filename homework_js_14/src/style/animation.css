@@ -1,0 +1,39 @@
+/* Анімація нот*/
+@keyframes my-animation {
+    0% {
+        transform: translateY(-350%);
+    }
+
+    50% {
+        transform: translateY(4rem);
+    }
+
+    80% {
+        transform: translateY(-2rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes my-animation-1 {
+    0% {
+        transform: translateY(-350%);
+    }
+
+    50% {
+        transform: translateY(4rem);
+        transform: rotate(-45deg);
+    }
+
+    80% {
+        transform: translateY(-2rem);
+        transform: rotate(-45deg);
+    }
+
+    100% {
+        transform: translateY(0);
+        transform: rotate(-45deg);
+    }
+}

@@ -1,0 +1,88 @@
+﻿https://swapi.dev – Працювати необхідно з цим API.
+
+http https://swapi.dev/api/
+
+Інформацію про те, як влаштовано АПІ шукайте в документації!
+
+Уявіть, що вам прийшло завдання на работі – все що залишив бекендер - це таку документацію та полетів у відпустку.
+
+Дуже заохочується максимально креативний підхід до цього завдання – робіть стилі, додайте який-небудь приємний шрифт (Якщо зовсім туго з ідеями шрифтів візьміть Roboto с Google Fonts).
+
+1.Cтворіть кнопку: "отримати інформацію". При натисканні на неї отримайте та відобразіть інформацію про усіх персонажів 5 епізоду зоряних війн(films/2).
+
+Зверніть увагу, що необхідно вивчити документацію та на її основі вивести інформацію.
+Виводимо тільки: повне ім'я персонажа, дата народження, стать(якщо зробите іконкою, буде взагалі ідеально).
+
+БОНУС ПЛЮС: Якщо додумаєтесь, як зберігати і виводити фотки персонажів – буде дуже круто. Дамо підказку: можна створити об'єкт з ключ=посилання_на_персонажа, значення=посилання_на_фотку У самому АПІ фотографій немає, але ДЗшка стане набагато приємніше виглядати з зображеннями персонажів.
+
+Виведіть список усіх планет, які були у зоряних війнах.
+3. Додайте кнопку next, яка завантажить наступну сторінку зі списком планет. Попередня сторінка при цьому має пропасти. (відбувається заміна даних)
+
+4. ADVANCED: додайте до 1 завдання поле вводу з номером фільму(номер по порядку випуску фильму). Тепер при натисканні на кнопку – необхідно отримати інформацію не про 5тий епізод, а про фільм, номер якого вказано у полі вводу. Якщо вказана цифра 1 – потрібно передати запит на /films/1
+
+5. ADVANCED: Додайте кнопку перекладу на вукийську мову. Після натискання на кнопку – весь отриманий по апі контент повинен перекластись на мову вуки.
+Для цього достатньо додати до будь-якого запиту: ?format=wookiee.  При фантазії – можете ще і текст кнопок перекласти :)
+
+{
+	"whrascwo": "Lhuorwo Sorroohraanorworc",
+	"acwoahrracao": "172",
+	"scracc": "77",
+	"acraahrc_oaooanoorc": "rhanoowhwa",
+	"corahwh_oaooanoorc": "wwraahrc",
+	"worowo_oaooanoorc": "rhanhuwo",
+	"rhahrcaoac_roworarc": "19BBY",
+	"rrwowhwaworc": "scraanwo",
+	"acooscwoohoorcanwa": "acaoaoakc://cohraakah.wawoho/raakah/akanrawhwoaoc/1/",
+	"wwahanscc": [
+		"acaoaoakc://cohraakah.wawoho/raakah/wwahanscc/1/",
+		"acaoaoakc://cohraakah.wawoho/raakah/wwahanscc/2/",
+		"acaoaoakc://cohraakah.wawoho/raakah/wwahanscc/3/",
+		"acaoaoakc://cohraakah.wawoho/raakah/wwahanscc/6/"
+	],
+	"cakwooaahwoc": [],
+	"howoacahoaanwoc": [
+		"acaoaoakc://cohraakah.wawoho/raakah/howoacahoaanwoc/14/",
+		"acaoaoakc://cohraakah.wawoho/raakah/howoacahoaanwoc/30/"
+	],
+	"caorarccacahakc": [
+		"acaoaoakc://cohraakah.wawoho/raakah/caorarccacahakc/12/",
+		"acaoaoakc://cohraakah.wawoho/raakah/caorarccacahakc/22/"
+	],
+	"oarcworaaowowa": "2014-12-09T13:50:51.644000Z",
+	"wowaahaowowa": "2014-12-20T21:17:56.891000Z",
+	"hurcan": "acaoaoakc://cohraakah.wawoho/raakah/akwoooakanwo/1/"
+}
+
+
+{
+	"name": "Luke Skywalker",
+	"height": "172",
+	"mass": "77",
+	"hair_color": "blond",
+	"skin_color": "fair",
+	"eye_color": "blue",
+	"birth_year": "19BBY",
+	"gender": "male",
+	"homeworld": "https://swapi.dev/api/planets/1/",
+	"films": [
+		"https://swapi.dev/api/films/1/",
+		"https://swapi.dev/api/films/2/",
+		"https://swapi.dev/api/films/3/",
+		"https://swapi.dev/api/films/6/"
+	],
+	"species": [],
+	"vehicles": [
+		"https://swapi.dev/api/vehicles/14/",
+		"https://swapi.dev/api/vehicles/30/"
+	],
+	"starships": [
+		"https://swapi.dev/api/starships/12/",
+		"https://swapi.dev/api/starships/22/"
+	],
+	"created": "2014-12-09T13:50:51.644000Z",
+	"edited": "2014-12-20T21:17:56.891000Z",
+	"url": "https://swapi.dev/api/people/1/"
+}
+
+
+
